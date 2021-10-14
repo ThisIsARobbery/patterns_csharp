@@ -8,7 +8,7 @@ namespace Singleton
 
         private static Singleton _instance;
 
-        public static Singleton getInstance()
+        public static Singleton GetInstance()
         {
             if (_instance == null)
             {
@@ -23,8 +23,8 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
-            Singleton s1 = Singleton.getInstance();
-            Singleton s2 = Singleton.getInstance();
+            Singleton s1 = Singleton.GetInstance();
+            Singleton s2 = Singleton.GetInstance();
 
             if (s1 == s2)
             {
